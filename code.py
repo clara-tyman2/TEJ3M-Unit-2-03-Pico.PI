@@ -1,0 +1,21 @@
+# Blink with breadboard and LED
+# Turns LED on for one second, the off for one second, each time increases each time by 1 more second 
+# created Feb 2025 by Clara T
+
+
+import time
+import board
+import digitalio
+
+blink_time = 1
+
+led = digitalio.DigitalInOut(board.GP3)
+led.direction = digitalio.Direction.OUTPUT
+
+while True:
+    led.value = True # LED On
+    time.sleep(blink_time) # Wait for 1000 millisecond(s)
+    led.value = False # LED Off
+    time.sleep(blink_time) # Wait for 1000 millisecond(s)
+
+    blink_time = blink_time + 1 # Add 1 second to the variable blink_time
