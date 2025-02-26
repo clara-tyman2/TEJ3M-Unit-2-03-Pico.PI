@@ -8,11 +8,11 @@ import board
 import digitalio
 
 blink_time = 1
-
-led = digitalio.DigitalInOut(board.GP3)
+led = digitalio.DigitalInOut(board.GP5)
 led.direction = digitalio.Direction.OUTPUT
 
 while True:
+    print(blink_time)
     led.value = True # LED On
     time.sleep(blink_time) # Wait for 1000 millisecond(s)
     led.value = False # LED Off
