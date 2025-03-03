@@ -1,6 +1,10 @@
-# Blink with breadboard and LED
-# Turns LED on for one second, the off for one second, each time increases each time by 1 more second 
-# created Feb 2025 by Clara T
+# Created by Clara T
+
+# Created on Feb 2025
+
+# Blink with Breadboard and LED with resistor
+
+# Turns LED on for one second, the off for one second, each time increases each time by 1 more second
 
 
 import time
